@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/srylesheet.css">
+        <link rel="icon" href="images\icon.png" type="image/icon type">
+        <script src="javascript/work.js"></script>
+        <title>Sign Up-Page</title>
+    </head>
+    <body bgcolor="#f3f2f2" onload="user()">
+      <div id="container">
+        <div class="topnav">
+            <a href="location.htm">Popular locations</a>
+            <a href="manage.htm">Manage Booking</a>
+            <a href="signup.htm" class="active" id="sign" style="display: block;">Sign Up</a>
+            <a href="login.htm" id="log" style="display: block;">Log In</a>
+            <a href="login.htm" id="logout" style="display: none;" onclick="return logout()">Log Out</a>
+            <a href="profile.htm" id="nameofuser" style="display: none;">Username</a>
+            <a href="index.htm" Style="font-family: Courier;color: white; float: left; "><b>CAR HIRE</b></a>
+          </div>
+        <div id="main">
+          
+            <div id="signup-box">
+              <div class="box-signup">
+                <center>
+                  <h2 style="text-align: center;
+                              font-family: 'Courier New', Courier, monospace; 
+                              font-weight: 300; 
+                              font-size: 28px;
+                              margin: 0 0 20px 0;
+                              ">Sign Up</h2>
+                              <br>
+                              <form id="signup-form" onsubmit="return signup()" action="login.htm">
+                  <input type="text" id="usern" placeholder="Username"/>
+                <br>
+                <input type="text" id="name" placeholder="Name"/>
+                <br>
+                <input type="email" id="mail" placeholder="E-mail"/>
+                <br>
+                <input type="password" id="pass1" placeholder="Password"/>
+                <br>
+                <input type="password" id="pass2" placeholder="Confirm Password"/>
+                <br>
+                <button type="submit" placeholder="Sign Up" id="sub">SIGN UP</button>
+              </form>  
+                </center>
+                
+              </div>
+            </div>
+          
+        </div>
+        <div id="footer"></div>
+        </div>
+    </body>
+</html>

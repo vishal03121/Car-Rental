@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/srylesheet.css">
+        <link rel="icon" href="images\icon.png" type="image/icon type">
+        <script src="javascript/work.js"></script>
+        <title>Booking Details</title>
+    </head>
+    <body bgcolor="#f3f2f2" onload="user();tablecontent()" onload="tablecontent()">
+      <div id="container">
+        <div class="topnav">
+            <a href="location.htm">Popular locations</a>
+            <a href="manage.htm" class="active">Manage Booking</a>
+            <a href="signup.htm" id="sign" style="display: block;">Sign Up</a>
+            <a href="login.htm" id="log" style="display: block;">Log In</a>
+            <a href="login.htm" id="logout" style="display: none;" onclick="return logout()">Log Out</a>
+            <a href="profile.htm" id="nameofuser" style="display: none;">Username</a>
+            <a href="index.htm" Style="font-family: Courier;color: white; float: left; "><b>CAR HIRE</b></a>
+          </div>
+        <div id="main" >
+          <p 
+          style="text-align: center;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          font-weight: 300px;
+          font-size: 40px;">
+          Manage Your Bookings
+        </p>
+        <hr id="line" style="display: none;"/>
+        <table id="content">
+          <tr>
+            <th style="width: 100px;">Sr. No.</th>
+            <th>PickUp Location</th>
+            <th>PickUp Date</th>
+            <th>Drop off Date</th>
+            <th>Purpose Of Rental</th>
+            <th>PickUp Time</th>
+            <th>Drop off Time</th>
+            <th style="width: auto;">Status</th>
+            <th>Action</th>
+          </tr>
+          
+        </table>
+        <br><br>
+        <hr id="line1" style="display: none;"/>
+        <h2 id="nocontent"
+          style="text-align: center;
+          display: none;
+          padding-top: 12%;
+          font-family: 'Courier New', Courier, monospace; 
+          font-weight: 300; 
+          font-size: 28px;
+          margin: 0 0 20px 0;">
+          No Bookings Till Now!
+        </h2>        
+          <h2 id="cont"
+          style="text-align: center;
+          padding-top: 12%;
+          display: block;
+          font-family: 'Courier New', Courier, monospace; 
+          font-weight: 300; 
+          font-size: 28px;
+          margin: 0 0 20px 0;">
+          Please Login To Manage Your Bookings!!!
+        </h2>          
+        
+        </div>
+        <div id="footer"></div>
+        </div>
+    </body>
+</html>

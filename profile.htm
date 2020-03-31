@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/srylesheet.css">
+        <link rel="icon" href="images\icon.png" type="image/icon type">
+        <title>User Profile:</title>
+        <script src="javascript/work.js"></script>
+    </head>
+    <body bgcolor="#f3f2f2" onload="user() ; profileinfo()">
+      <div id="container">
+        <div class="topnav">
+            <a href="location.htm">Popular locations</a>
+            <a href="manage.htm">Manage Booking</a>
+            <a href="signup.htm" id="sign" style="display: block;">Sign Up</a>
+            <a href="login.htm" id="log" style="display: block;">Log In</a>
+            <a href="login.htm" id="logout" style="display: none;" onclick="return logout()">Log Out</a>
+            <a href="profile.htm" id="nameofuser" class="active" style="display: none;">Username</a>
+            <a href="index.htm" Style="font-family: Courier;color: white; float: left; "><b>CAR HIRE</b></a>
+          </div>
+        <div id="main">
+          
+            <div id="profile-box">
+              <div class="box">
+                <center>
+                  <h2 style="text-align: center;
+                              font-family: 'Courier New', Courier, monospace; 
+                              font-weight: 300; 
+                              font-size: 28px;
+                              margin: 0 0 20px 0;
+                              ">Profile:</h2>
+                              <br>
+                              <form action="changepass.htm">
+                                <label for="profilename" style="float: left; height: 40; padding: 8px;">Name:</label>
+                                
+                  <input id="profilename" type="text" value="xyz" readonly/>
+                <br>
+                <label for="profileusername" style="float: left; height: 40; padding: 8px;">Username:</label>
+                <input id="profileusername" type="text" value="xyz" readonly/>
+                <br>
+                <label for="profileid" style="float: left; height: 40; padding: 8px;">Email:</label>
+                <input id="profileid" type="text" value="xyz" readonly/>
+                <br>
+                <button type="submit" id="changeps">Change Password</button>
+              </form>
+                </center>
+                
+              </div>
+            </div>
+          
+          <p id="error"></p>
+        </div>
+        <div id="footer"></div>
+        </div>
+    </body>
+</html>
